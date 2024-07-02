@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pushpendra Singh - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    @font-face {
+      font-family: 'ZT Neue Raleway';
+      src: url('path-to-your-font-file/ZTNeueRaleway-Regular.woff2') format('woff2'),
+           url('path-to-your-font-file/ZTNeueRaleway-Regular.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    :root {
+      --primary-color: #333;
+      --background-color: #fff;
+      --text-color: #333;
+      --accent-color: #007BFF;
+    }
+
+    body {
+      font-family: 'ZT Neue Raleway', Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s, color 0.3s;
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    nav {
+      background: var(--background-color);
+      padding: 1rem 2rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-left: 2rem;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+    }
+
+    .container {
+      padding: 5rem 2rem 2rem 2rem;
+    }
+
+    .section {
+      padding: 2rem 0;
+      text-align: center;
+    }
+
+    #home h1 {
+      font-size: 4em;
+      margin: 0;
+      animation: fadeInUp 1s ease forwards;
+    }
+
+    .dark-mode-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: transparent;
+      transition: transform 0.3s ease;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .dark-mode-toggle:hover {
+      transform: scale(1.1);
+    }
+
+    .dark-mode-toggle svg {
+      width: 40px;
+      height: 40px;
+    }
+
+    .sun {
+      fill: var(--primary-color);
+    }
+
+    .moon {
+      fill: transparent;
+      stroke: var(--primary-color);
+      stroke-width: 2px;
+    }
+
+    body.dark-mode {
+      --primary-color: #fff;
+      --background-color: #000;
+      --text-color: #fff;
+    }
+
+    body.dark-mode .sun {
+      fill: transparent;
+      stroke: var(--primary-color);
+      stroke-width: 2px;
+    }
+
+    body.dark-mode .moon {
+      fill: var(--primary-color);
+      stroke: none;
+    }
+
+    .social-links {
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      margin: 0 1rem;
+      color: var(--text-color);
+      font-size: 1.5rem;
+      transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+      color: var(--accent-color);
+    }
+
+    .skills {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .skills .skill {
+      background: var(--accent-color);
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+
+    .skills .skill:hover {
+      transform: translateY(-10px);
+    }
+
+    .contact-form {
+      max-width: 600px;
+      margin: 2rem auto;
+      text-align: left;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      background: var(--accent-color);
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="container">
+    <div class="section" id="home">
+      <h1>Hello, I'm Pushpendra Singh</h1>
+    </div>
+    <div class="section" id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Pushpendra Singh, a pre-college student from India, about to major in Electronics & Computer Engineering. Growing up around computers, playing games, and experimenting with various apps has given me an early edge over my peers and a strong intuition that my future lies in Computer Science. AI and Machine Learning deeply fascinate me; they honestly feel like magic.
+      </p>
+      <p>
+        Beyond academics, I am interested in finance and exploring the applications of Computer Science, AI, and Machine Learning in this field. In my leisure time (when I have any), I enjoy watching Formula 1, NBA, and occasionally catching up on golf.
+      </p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/aetosdios_301/?utm_source=ig_web_button_share_sheet" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/AetosDios301" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/pushpendrasingh301" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">C++ (CodeChef Certified)</div>
+        <!-- Add more skills here -->
+      </div>
+    </div>
+    <div class="section" id="contact">
+      <h2>Contact Me</h2>
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <button class="dark-mode-toggle" onclick="toggleDarkMode()">
+    <svg id="toggle-icon" viewBox="0 0 24 24">
+      <circle class="sun" cx="12" cy="12" r="5"/>
+      <path class="moon" d="M21.99 12.38A9.89 9.89 0 0 1 12.62 2 9.89 9.89 0 1 0 21.99 12.38z"/>
+    </svg>
+  </button>
+
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+    }
+
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert('Thank you for your message!');
+    });
+  </script>
+</body>
+</html>
