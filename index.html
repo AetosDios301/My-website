@@ -21,47 +21,28 @@
       --accent-color: #007BFF;
     }
 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
     body {
       font-family: 'ZT Neue Raleway', Arial, sans-serif;
       line-height: 1.6;
-      margin: 0;
-      padding: 0;
       transition: background-color 0.3s, color 0.3s;
       background-color: var(--background-color);
       color: var(--text-color);
-    }
-
-    nav {
-      background: var(--background-color);
-      padding: 1rem 2rem;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      position: fixed;
-      width: 100%;
-      top: 0;
-      left: 0;
-      z-index: 1000;
-    }
-
-    nav ul {
-      list-style: none;
       display: flex;
-      justify-content: flex-end;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav ul li {
-      margin-left: 2rem;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: var(--text-color);
-      font-weight: bold;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .container {
-      padding: 5rem 2rem 2rem 2rem;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
     }
 
     .section {
@@ -70,7 +51,7 @@
     }
 
     #home h1 {
-      font-size: 4em;
+      font-size: 2.5em;
       margin: 0;
       animation: fadeInUp 1s ease forwards;
     }
@@ -146,21 +127,21 @@
     .skills {
       display: flex;
       justify-content: center;
-      gap: 2rem;
+      gap: 1rem;
       flex-wrap: wrap;
     }
 
     .skills .skill {
       background: var(--accent-color);
       color: white;
-      padding: 1rem;
+      padding: 0.5rem 1rem;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s;
     }
 
     .skills .skill:hover {
-      transform: translateY(-10px);
+      transform: translateY(-5px);
     }
 
     .contact-form {
@@ -198,11 +179,28 @@
         transform: translateY(0);
       }
     }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1rem;
+      }
+
+      #home h1 {
+        font-size: 2em;
+      }
+
+      .skills {
+        gap: 0.5rem;
+      }
+
+      .skills .skill {
+        padding: 0.5rem;
+        font-size: 0.9em;
+      }
+    }
   </style>
 </head>
 <body>
-  
-
   <div class="container">
     <div class="section" id="home">
       <h1>Hello, I'm Pushpendra Singh</h1>
