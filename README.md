@@ -1,6 +1,7 @@
 # My Personal Website
 
 This is my first personal website: [https://aetosdios301.github.io/My-website/](https://aetosdios301.github.io/My-website/)
+Now on netlify as well: https://pushpendrasingh.netlify.app/
 
 ## About Me
 I am a pre-college student (as of July 2024) about to major in Electronics and Computer Engineering. I currently know C++ and am certified by CodeChef.
